@@ -13,11 +13,11 @@ Nagios::Scrape - Scrapes and Parses the status.cgi page of a Nagios installation
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -202,7 +202,7 @@ sub parse_service_content {
     {
 
         #  Host might be empty if this is a host with multiple alerts
-        $host = ( $1 ne '' ) ? $1 : $host;
+        $host = $1 if (defined($1));
 
         my $alert = {
             'type'        => 'service',

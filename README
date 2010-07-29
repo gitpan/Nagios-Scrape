@@ -3,7 +3,7 @@ NAME
     installation
 
 VERSION
-    Version 0.01
+    Version 0.02
 
 SYNOPSIS
     This module uses LWP to retrieve the status.cgi page of a Nagios
