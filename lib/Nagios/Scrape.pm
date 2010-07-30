@@ -13,11 +13,11 @@ Nagios::Scrape - Scrapes and Parses the status.cgi page of a Nagios installation
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -266,6 +266,11 @@ sub parse_host_content {
     return @alerts;
 }
 
+=head2 decode_html
+
+Simple helper method that smooths out HTML strings from Nagios status.cgi page
+
+=cut
 
 sub decode_html {
     my ( $self, $string ) = @_;

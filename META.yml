@@ -1,6 +1,6 @@
 ---
 name: Nagios-Scrape
-version: 0.02
+version: 0.03
 author:
   - 'Joe Topjian <joe@terrarum.net>'
 abstract: Scrapes and Parses the status.cgi page of a Nagios installation
@@ -19,6 +19,6 @@ meta-spec:
 provides:
   Nagios::Scrape:
     file: lib/Nagios/Scrape.pm
-    version: 0.02
+    version: 0.03
 resources:
   license: http://dev.perl.org/licenses/
